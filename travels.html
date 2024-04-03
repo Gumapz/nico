@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Outdoor Adventure" class="logo">
+        <h1>Adventure</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Blogs</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="travels.html" onclick="blurBackground()">Travels</a></li>
+                        <li><a href="foods.html" onclick="blurBackground()">Foods</a></li>
+                    </ul>
+                </li>           
+                <li><a href="3.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Content related to travels -->
+            <section class="video-album">
+                <h2 onclick="toggleAlbum('video')">Video Album</h2>
+                <!-- First video -->
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/gzzRFU8CcG8" frameborder="0" allowfullscreen></iframe>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section class="photo-album">
+            <h2 onclick="toggleAlbum('photo')">Photo Album</h2>
+            <!-- Display photo gallery or individual images here -->
+            <img width="400" height="200" src="drink.jpg" alt="Food 1" onclick="viewPhoto('drink.jpg')">
+            <img width="400" height="200" src="food2.jpg" alt="Food 2" onclick="viewPhoto('food2.jpg')">
+            <img width="400" height="200" src="drink.jpg" alt="Food 1" onclick="viewPhoto('drink.jpg')">
+            <img width="400" height="200" src="food2.jpg" alt="Food 2" onclick="viewPhoto('food2.jpg')">
+            <img width="400" height="200" src="drink.jpg" alt="Food 1" onclick="viewPhoto('drink.jpg')">
+            <img width="400" height="200" src="food2.jpg" alt="Food 2" onclick="viewPhoto('food2.jpg')">
+            <!-- Add more images as needed -->
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact:</h3>
+            <p>Email: njay01491@gmail.com</p>
+            <p>Phone: 09976086931</p>
+        </div>
+        <div class="social-icons">
+            <h4>Follow me on:</h4>
+            <a href="#"><img src="fb.png" alt="Facebook"></a>
+            <a href="#"><img src="tiktok.png" alt="Youtube"></a>
+            <a href="#"><img src="insta.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+</body>
+</html>
